@@ -1,7 +1,11 @@
 /*CSS styles*/
 
 body{
-    background-color: #333;
-    background-image: url('./image/landing.jpg');
+    background: #333 url('image/landing.jpg');
+
+}
+
+h1{
+    color: whitesmoke;
 
 }
