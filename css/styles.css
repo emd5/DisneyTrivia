@@ -8,13 +8,11 @@ nav {
     display: block;
 }
 
-body{
+content{
     width: auto;
     height: 80vh;
     background-image: url('../image/landing.jpg');
     background-size: cover;
-
-
 }
 
 h1{
