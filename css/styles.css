@@ -1,5 +1,13 @@
 /*CSS styles*/
 
+header{
+    background-color: #333;
+}
+
+nav {
+    display: block;
+}
+
 body{
     width: auto;
     height: 80vh;
@@ -12,4 +20,9 @@ body{
 h1{
     color: whitesmoke;
 
+}
+
+footer{
+    display: block;
+    background-color: #333;
 }
