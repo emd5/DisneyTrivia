@@ -1,7 +1,7 @@
 /*CSS styles*/
 
 body{
-    background: #333 url('image/landing.jpg');
+    background-image: url('image/landing.jpg');
 
 }
 
