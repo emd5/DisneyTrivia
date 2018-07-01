@@ -58,16 +58,33 @@ body{
 
 /*Style content*/
 .content{
+
     display: block;
-    background-image: url('../image/landing.jpg');
+    background: url('../image/landing.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
-    color: azure;
+    height: 65vh;
+    color: #1d0605;
     z-index: -1;
     position: relative;
 
 }
 
+
+/*style forms*/
+.formBox {
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    padding: 10vh 0vh;
+    text-align: center;
+}
+form{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    z-index: 2;
+    padding: 10vh 10vh;
+    background: rgba(229, 229, 229, 0.8);
+}
 
 
 .footer{
