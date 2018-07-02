@@ -8,6 +8,21 @@ body{
 
 }
 
+label{
+    /*padding: 1em;*/
+}
+
+input{
+    line-height: 1em;
+    padding: 1em;
+}
+
+.row{
+    /*width: 100%;*/
+    padding: 1em;
+
+}
+
 /* header styles*/
 .header{
     background-color: whitesmoke;
@@ -18,10 +33,9 @@ body{
     z-index: 0;
     overflow: hidden;
 
-
 }
 .header h1{
-    font-size: 60px;
+    font-size: 80px;
     font-family: 'Cabin Sketch', cursive;
 }
 
@@ -58,17 +72,15 @@ body{
 
 /*Style content*/
 .content{
-
     display: block;
     background: url('../image/landing.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 65vh;
+    margin: auto;
     color: #1d0605;
     z-index: -1;
     position: relative;
 
 }
-
 
 /*style forms*/
 .formBox {
@@ -79,13 +91,33 @@ body{
     text-align: center;
 }
 form{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 20px;
     margin-left: 5vh;
     margin-right: 5vh;
     z-index: 2;
-    padding: 10vh 10vh;
+    /*padding: 10vh 10vh;*/
     background: rgba(229, 229, 229, 0.8);
 }
 
+
+.button {
+    width: 50%;
+    line-height: 2em;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 
 .footer{
     position: fixed;
