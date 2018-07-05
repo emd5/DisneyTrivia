@@ -37,6 +37,7 @@ input{
 .header h1{
     font-size: 80px;
     font-family: 'Cabin Sketch', cursive;
+    margin-bottom: 0em;
 }
 
 .header p{
@@ -73,34 +74,64 @@ input{
 /*Style content*/
 .content{
     display: block;
+    z-index: -10;
+    background: rgba(0, 0, 0, 0.1) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.landingImg{
+    display: block;
     background: url('../image/landing.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: auto;
     color: #1d0605;
-    z-index: -1;
+    z-index: -10;
+    height: 55vh;
     position: relative;
 
 }
 
 /*style forms*/
 .formBox {
+    width: 70%;
     margin: auto;
     z-index: 2;
     position: relative;
-    padding: 10vh 0vh;
+    padding: 10em 0em;
     text-align: center;
+    background: rgba(229, 229, 229, 0.8);
+
 }
 form{
     font-family: 'Cabin Sketch', cursive;
     font-size: 20px;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-left: 1em;
+    margin-right: 1em;
     z-index: 2;
-    /*padding: 10vh 10vh;*/
-    background: rgba(229, 229, 229, 0.8);
+
 }
 
+.formPage{
+    display: none;
+}
 
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.current {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/*Button Styles*/
 .button {
     width: 50%;
     line-height: 2em;
@@ -120,13 +151,14 @@ form{
 }
 
 .footer{
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
+    margin: -15px 0px;
+    z-index: 0;
     width: 100%;
+    bottom: 0;
     text-align: center;
     display: block;
     background-color: #333;
+    position: fixed;
 }
 
 .footer p{
@@ -139,3 +171,54 @@ form{
 
 
 }
+
+img{
+    width: 20%;
+    height: 20%;
+}
+
+label> input {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+}
+
+label> input + img{
+    cursor:pointer;
+    border: 2px solid transparent;
+
+}
+
+label> input:checked + img{
+    border:2px solid #fff64e;
+}
+
+.pagination{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    z-index: 2;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #39bb1c;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4CAF50;
+}
+
+
