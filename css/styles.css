@@ -87,7 +87,7 @@ input{
     margin: auto;
     color: #1d0605;
     z-index: -10;
-    height: 55vh;
+    height: 80vh;
     position: relative;
 
 }
@@ -98,7 +98,7 @@ input{
     margin: auto;
     z-index: 2;
     position: relative;
-    padding: 10em 0em;
+    padding: 5em 0em;
     text-align: center;
     background: rgba(229, 229, 229, 0.8);
 

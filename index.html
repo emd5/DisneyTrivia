@@ -19,30 +19,29 @@
 
     <div class="content">
         <div class="landingImg">
-            <div class="formBox">
-                <form name="landingForm" action="#" onsubmit="return validateForm()" method="POST">
+            <div class="formBox" >
+                <form id = "landingForm" name="landingForm" action="#">
 
                     <div class="formPage">
                        <p> <label>Enter your name</label></p>
-                       <p> <input type="text" name="first" placeholder="Sasquatch" oninput="this.className = ''"></p>
+                       <p> <input type="text" name="first" id="first" placeholder="Sasquatch"></p>
                        <!--<p> <button class="button">Next</button></p>-->
                     </div>
 
-                    <div class="formPage">
+                    <div class="formPage" >
                         <p> <label>Select Terrain</label></p>
-
                             <label>
-                                <input type="radio" name="terrain" value="mountain" onclick="selectTerrain()" >
+                                <input type="radio" id="t1" name="terrain" value="mountain" >
                                 Mountain
                                 <img src="image/mountain.jpg">
                             </label>
                             <label>
-                                <input type="radio" name="terrain" value="waterfall" onclick="selectTerrain()" >
+                                <input type="radio" id="t2" name="terrain" value="waterfall" >
                                  Waterfall
                                 <img src="image/waterfall.jpg">
                             </label>
                             <label>
-                                <input type="radio" name="terrain" value="surprise" onclick="selectTerrain()" >
+                                <input type="radio" id="t3" name="terrain" value="surprise" >
                                 Surprise Me
                                 <img src="image/surprise.jpg">
                             </label>
@@ -51,7 +50,7 @@
 
                     <div class="formPage">
                          <label>Select Distance</label>
-                        <select id="distanceOption">
+                        <select id="distanceOption" >
                             <option value="one">1 mile or less</option>
                             <option value="two">2-5 miles</option>
                             <option value="three">5+ miles</option>
@@ -63,25 +62,28 @@
                     <div class="formPage">
                         <p> <label>Hitch Results</label></p>
                         <p>You would like </p>
-                        <!--buttons-->
+
+                        <p id="results"></p>
 
                     </div>
 
                     <!--Buttons-->
                     <div style="overflow:auto;">
                         <div style="float:right;">
-                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            <button type="button" id="nextBtn" onclick="nextDisplay(1)">Next</button>
+
+                            <!--<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>-->
+                            <!--<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>-->
                         </div>
                     </div>
 
-                    <!--Pagination steps-->
-                    <div class="pagination">
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                    </div>
+                    <!--steps-->
+                    <!--<div style="text-align:center;margin-top:40px;">-->
+                        <!--<span class="step"></span>-->
+                        <!--<span class="step"></span>-->
+                        <!--<span class="step"></span>-->
+                        <!--&lt;!&ndash;<span class="step"></span>&ndash;&gt;-->
+                    <!--</div>-->
 
                 </form>
             </div>
