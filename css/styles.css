@@ -45,6 +45,22 @@ input{
     font-family: 'Life Savers', cursive;
 }
 
+.hikeBox{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    padding: 5em 0em;
+    text-align: center;
+    background: rgba(229, 229, 229, 0.8);
+
+}
+ul {
+    list-style-type: none;
+}
+
 #results{
     font-size: 20px;
     font-family: 'Life Savers', cursive;
@@ -121,20 +137,20 @@ form{
     display: none;
 }
 
-input.invalid {
-    background-color: #ffdddd;
-}
+/*input.invalid {*/
+    /*background-color: #ffdddd;*/
+/*}*/
 
-.current {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.5;
-}
+/*.current {*/
+    /*height: 15px;*/
+    /*width: 15px;*/
+    /*margin: 0 2px;*/
+    /*background-color: #bbbbbb;*/
+    /*border: none;*/
+    /*border-radius: 50%;*/
+    /*display: inline-block;*/
+    /*opacity: 0.5;*/
+/*}*/
 
 /*Button Styles*/
 .button {
@@ -198,32 +214,32 @@ label> input:checked + img{
     border:2px solid #fff64e;
 }
 
-.pagination{
-    text-align: center;
-    margin-bottom: 40px;
-}
+/*.pagination{*/
+    /*text-align: center;*/
+    /*margin-bottom: 40px;*/
+/*}*/
 
-/* Make circles that indicate the steps of the form: */
-.step {
-    z-index: 2;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #39bb1c;
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.5;
-}
+/*!* Make circles that indicate the steps of the form: *!*/
+/*.step {*/
+    /*z-index: 2;*/
+    /*height: 15px;*/
+    /*width: 15px;*/
+    /*margin: 0 2px;*/
+    /*background-color: #39bb1c;*/
+    /*border: none;*/
+    /*border-radius: 50%;*/
+    /*display: inline-block;*/
+    /*opacity: 0.5;*/
+/*}*/
 
-/* Mark the active step: */
-.step.active {
-    opacity: 1;
-}
+/*!* Mark the active step: *!*/
+/*.step.active {*/
+    /*opacity: 1;*/
+/*}*/
 
-/* Mark the steps that are finished and valid: */
-.step.finish {
-    background-color: #4CAF50;
-}
+/*!* Mark the steps that are finished and valid: *!*/
+/*.step.finish {*/
+    /*background-color: #4CAF50;*/
+/*}*/
 
 
