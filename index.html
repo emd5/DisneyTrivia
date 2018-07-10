@@ -20,12 +20,21 @@
     <div class="content">
         <div class="landingImg">
             <div class="formBox" >
-                <form id = "landingForm" name="landingForm" action="#">
+                <form id = "landingForm" name="landingForm" action="#" > <!--onsubmit="results()"-->
 
                     <div class="formPage">
                        <p> <label>Enter your name</label></p>
-                       <p> <input type="text" name="first" id="first" placeholder="Sasquatch"></p>
-                       <!--<p> <button class="button">Next</button></p>-->
+                       <p> <input type="text" name="first" id="first" placeholder="Sasquatch" oninput=" return results()"></p>
+                    </div>
+
+                    <div class="formPage">
+                        <label>Select Distance</label>
+                        <select id="distanceOption">
+                            <option value="2 mile or less">2 mile or less</option>
+                            <option value="2-5 miles">2-5 miles</option>
+                            <option value="5+ miles">5+ miles</option>
+                        </select>
+                        <br>
                     </div>
 
                     <div class="formPage" >
@@ -48,22 +57,16 @@
 
                     </div>
 
-                    <div class="formPage">
-                         <label>Select Distance</label>
-                        <select id="distanceOption" >
-                            <option value="one">1 mile or less</option>
-                            <option value="two">2-5 miles</option>
-                            <option value="three">5+ miles</option>
-                        </select>
-                        <br>
-                        <!--<p> <button class="button">Next</button></p>-->
-                    </div>
+
 
                     <div class="formPage">
                         <p> <label>Hitch Results</label></p>
-                        <p>You would like </p>
 
                         <p id="results"></p>
+
+                        <p>You would like </p>
+
+                        <p id="hikeResultDisplay"> </p>
 
                     </div>
 
@@ -71,19 +74,9 @@
                     <div style="overflow:auto;">
                         <div style="float:right;">
                             <button type="button" id="nextBtn" onclick="nextDisplay(1)">Next</button>
-
-                            <!--<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>-->
-                            <!--<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>-->
                         </div>
                     </div>
 
-                    <!--steps-->
-                    <!--<div style="text-align:center;margin-top:40px;">-->
-                        <!--<span class="step"></span>-->
-                        <!--<span class="step"></span>-->
-                        <!--<span class="step"></span>-->
-                        <!--&lt;!&ndash;<span class="step"></span>&ndash;&gt;-->
-                    <!--</div>-->
 
                 </form>
             </div>
